@@ -1,0 +1,168 @@
+ru:
+  attributes:
+    income: 'Дохід'
+    expense: 'Витрата'
+    amount: 'Сума'
+    currency_id: 'Валюта'
+    name: 'Назва'
+    made_on: 'Дата'
+    category_id: 'Категорія'
+    resource_id: 'Ресурс'
+    cached_tag_list: 'Тег'
+    comment: 'Коментар'
+    system_comment: 'Повідомлення про помилки'
+    backcolor: 'Фоновий колір'
+    enabled: 'Статус'
+    mode: 'Тип'
+    before_day: 'Повідомлення'
+    at_time: 'В'
+    rollover: 'Перенесення залишку'
+    location: 'Розташування'
+
+  activerecord:
+    models:
+      category: 'Категорія'
+      profile: 'Профіль'
+      credit: 'Кредит'
+      currency: 'Валюта'
+      event: 'Подія'
+      external_connection: "Зовнішній Зв'язок"
+      import_file: 'Файл Імпорту'
+      import_category: 'Категорія Імпорту'
+      import_resource: 'Ресурс Імпорту'
+      import_transaction: 'Транзакція Імпорту'
+      import_rule: 'Правила Імпорту'
+      item: 'Елемент'
+      link: 'Посилання'
+      month: 'Місяць'
+      operation: 'Операція'
+      plan: 'План'
+      qa_question: 'Питання'
+      budget: 'Бюджет'
+      rate: 'Курс'
+      resource: 'Ресурс'
+      schedule: 'Повтор'
+      system_mode: 'Тип'
+      transaction: 'Транзакція'
+      user_currency: 'Валюта профілю'
+      user: 'Профіль'
+    attributes:
+      category:
+        parent_id: 'Батьківська Категорія'
+        budget_mode: 'Автоматичне створення бюджетів'
+        limit_notification: 'Повідомлення про перевищенні витрати'
+      consumer_token:
+        category_id: 'Категорія за замовчуванням'
+        resource_id: 'Ресурс за замовчуванням'
+      profile:
+        currency_id: 'Валюта за замовчуванням'
+        operation_notification: 'Повідомлення про Подіях'
+        month_notification: 'Місячний звіт'
+        credit_notification: 'Повідомлення про кредити'
+        locale: 'Мова за замовчуванням'
+        export_separator: 'Роздільник'
+        export_encoding: 'Кодування'
+        export_decimal_delimiter: 'Десятковий роздільник'
+        time_zone: 'Часовий пояс'
+        credit_day: 'Днів до повернення Кредиту'
+        credit_time: 'В'
+        operation_day: 'Днів до події'
+        operation_time: 'В'
+        login_page: 'Сторінка входу'
+        geolocation: 'Збереження координат'
+        date_format: 'Формат дати'
+        time_format: 'Формат часу'
+        import_email: 'Адреса для імпорту'
+        import_email_mode: 'Імпортувати як'
+        calendar_popup: 'Спливаюче вікно'
+        calendar_email: 'Email'
+        calendar_sms: 'SMS'
+      qa_question:
+        body: 'Текст Питання'
+      credit:
+        expected_return: 'Очікуване повернення'
+        return_date: 'Дата повернення'
+      event:
+        schedule:
+          start_on: 'Дата початку'
+          repeat: 'Повтор'
+          interval_value: 'Інтервал'
+          end_status: 'Тип закінчення'
+          occurrence_count: 'Число повторень'
+          until_date: 'До дати'
+          day_type: 'Тип дня'
+          week_day_number: 'День тижня'
+          week_day_shift: 'Зсув дня тижня'
+          month_day_shift: 'Зсув дня місяця'
+      external_connection:
+        to_email: 'Email'
+        to_user_id: 'Користувач'
+        from_user_id: 'Користувач'
+      import_file:
+        data: 'Файл Імпорту'
+        mode: 'Тип'
+        currency_id: 'Валюта'
+        separator: 'Роздільник колонок'
+        header: 'Тема'
+        encoding: 'Кодування'
+        date_format: 'Формат дати'
+        decimal_delimiter: 'Десятковий роздільник'
+        quote_char: 'Тип лапок'
+      import_transaction:
+        line_number: 'Номер рядка'
+        status: 'Статус імпорту'
+        import_category_id: 'Категорія імпорту'
+        import_resource_id: 'Ресурс імпорту'
+      import_rule:
+        phrase: 'Фраза'
+        use_resource: 'Використовувати Ресурси'
+        use_category: 'Використовувати Категорії'
+        enabled: 'Обробка Записи'
+      item:
+        name: 'Назва'
+        income: 'Дохід'
+        expense: 'Витрата'
+      link:
+        link_category_id: 'Категорія посилання'
+        url: 'посилання'
+        title: 'текст'
+        description: 'опис'
+        reciprocal_url: 'Зворотній посилання'
+      budget:
+        year: 'Рік'
+        month: 'Місяць'
+        limit_notification: 'Повідомлення про перевищенні витрати'
+      resource:
+        date_from: 'З'
+        date_to: 'До'
+        overdraft_notification: 'Повідомлення про негативному балансі'
+      schedule:
+        repeat: 'Повтор'
+        interval_value: 'Інтервал'
+        end_status: 'Тип закінчення'
+        occurrence_count: 'Число повторень'
+        until_date: 'До дати'
+        day_type: 'Тип дня'
+        week_day_number: 'День тижня'
+        week_day_shift: 'Зсув дня тижня'
+        month_day_shift: 'Зсув дня місяця'
+      transaction:
+        mode: 'Тип'
+        external_connection_id: "Зовнішній зв'язок"
+        item:
+          name: 'Назва'
+          income: 'Дохід'
+          expense: 'Витрата'
+      user:
+        name: "Ім'я"
+        password: 'Пароль'
+        password_confirmation: 'Ппідтвердження пароля'
+        current_password: 'Поточний пароль'
+        remember_me: "запам'ятати"
+    errors:
+      messages:
+        incorrect_date_format: 'невірний формат дати'
+        not_found: 'не знайдено'
+        connection_exists: "Зв'язок для Зовнішніх Перекладів вже існує."
+        to_before_from: 'Дата закінчення (До) не може бути раніше дати початку (З).'
+        
