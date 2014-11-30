@@ -1,0 +1,293 @@
+# https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ru.yml
+
+uk:
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+
+    day_names: ["неділя", "понеділок", "вівторок", "середа", "четвер", "п'ятниця", "субота"]
+    standalone_day_names: ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"]
+    abbr_day_names: [Нд, Пн, Вт, Ср, Чт, Пт, Сб]
+
+    month_names: [~, Січень, Лютий, Березень, Квітень, Травень, Червень, Липень, Серпень, Вересень, Жовтень, Листопад, Грудень]
+    # see russian gem for info on "standalone" day names
+    standalone_month_names: [~, січня, лютого, березня, квітня, травня, червня, липня, серпня, вересня, жовтня, листопада, грудня]
+
+    abbr_month_names: [~, січ., лют., бер., квіт., трав., черв., лип., серп., вер., жовт., лист., груд.]
+    standalone_abbr_month_names: [~, січ., лют., бер., квіт., трав., черв., лип., серп., вер., жовт., лист., груд.]
+
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      short: "%d %b, %H:%M"
+      long: "%d %B %Y, %H:%M"
+
+    am: "до полудня"
+    pm: "по полудні"
+
+  number:
+    format:
+      separator: ","
+      delimiter: " "
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%n %u"
+        unit: "грн."
+        separator: ","
+        delimiter: " "
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+
+      # Rails 2.2
+      # storage_units: [байт, КБ, МБ, ГБ, ТБ]
+
+      # Rails 2.3
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one: "байт"
+            few: "байти"
+            many: "байтів"
+            other: "байту"
+          kb: "КБ"
+          mb: "МБ"
+          gb: "ГБ"
+          tb: "ТБ"
+
+      # Rails 3
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand:
+            one: "Тисяча"
+            few: "Тисяч"
+            many: "Тисяч"
+            other: "Тисяч"
+          million:
+            one: "Мільйон"
+            few: "Мільйонів"
+            many: "Мільйонів"
+            other: "Мільйонів"
+          billion:
+            one: "Мільярд"
+            few: "Мільярдів"
+            many: "Мільярдів"
+            other: "Мільярдів"
+          trillion:
+            one: "Трильйон"
+            few: "Трильйонів"
+            many: "Трильйонів"
+            other: "Трильйонів"
+          quadrillion:
+            one: "Кквадрильйон"
+            few: "Квадрильйонів"
+            many: "Квадрильйонів"
+            other: "Квадрильйонів"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "пів хвилини"
+      less_than_x_seconds:
+        few: "менше %{count} секунд"
+        many: "менше %{count} секунд"
+        one: "менше %{count} секунди"
+        other: "менше %{count} секунди"
+      x_seconds:
+        few: "%{count} секунди"
+        many: "%{count} секунд"
+        one: "%{count} секунда"
+        other: "%{count} секунди"
+      less_than_x_minutes:
+        few: "менше %{count} хвилин"
+        many: "менше %{count} хвилин"
+        one: "менше %{count} хвилини"
+        other: "менше %{count} хвилини"
+      x_minutes:
+        few: "%{count} хвилини"
+        many: "%{count} хвилин"
+        one: "%{count} хвилина"
+        other: "%{count} хвилини"
+      about_x_hours:
+        few: "близько %{count} години"
+        many: "близько %{count} годин"
+        one: "близько %{count} година"
+        other: "близько %{count} години"
+      x_days:
+        few: "%{count} дні"
+        many: "%{count} днів"
+        one: "%{count} день"
+        other: "%{count} дня"
+      about_x_months:
+        few: "близько %{count} місяців"
+        many: "близько %{count} місяців"
+        one: "близько %{count} місяця"
+        other: "близько %{count} місяця"
+      x_months:
+        few: "%{count} місяці"
+        many: "%{count} місяців"
+        one: "%{count} місяць"
+        other: "%{count} місяця"
+      about_x_years:
+        few: "близько %{count} років"
+        many: "близько %{count} років"
+        one: "близько %{count} року"
+        other: "близько %{count} року"
+      over_x_years:
+        few: "більше %{count} років"
+        many: "більше %{count} років"
+        one: "більше %{count} року"
+        other: "більше %{count} року"
+      almost_x_years:
+        few: "майже %{count} років"
+        many: "майже %{count} років"
+        one: "майже %{count} роки"
+        other: "майже %{count} років"
+
+    prompts:
+      day: День
+      hour: Година
+      minute: Хвилина
+      month: Місяць
+      second: Секунда
+      year: Рік
+
+  helpers:
+    select:
+      # Default value for :prompt => true in FormOptionsHelper
+      prompt: "Оберіть: "
+
+    # Default translation keys for submit FormHelper
+    submit:
+      create: Створити %{model}
+      submit: Зберегти %{model}
+      update: Зберегти %{model}
+
+  # In rails 3 errors is top-level namespace
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages:
+      inclusion: "має непередбачене значення"
+      exclusion: "має зарезервоване значення"
+      invalid: "має невірне значення"
+      confirmation: "не збігається з підтвердженням"
+      accepted: "потрібно підтвердити"
+      empty: "не може бути порожнім"
+      blank: "не може бути пустим"
+      too_long:
+        few: занадто довгий (максимум %{count} знаки)
+        many: занадто довгий (максимум %{count} знаків)
+        one: занадто довгий (максимум %{count} знак)
+        other: занадто довгий (максимум %{count} знаку)
+      too_short:
+        few: занадто короткий (мінімум %{count} знаки)
+        many: занадто короткий (мінімум %{count} знаків)
+        one: занадто короткий (мінімум %{count} знак)
+        other: занадто короткий (мінімум %{count} знаку)
+      wrong_length:
+        few: неправильна довжина (має бути %{count} знаки)
+        many: неправильна довжина (має бути %{count} знаків)
+        one: неправильна довжина (має бути %{count} знак)
+        other: неправильна довжина (має бути %{count} знаку)
+      taken: "вже зайнятий"
+      not_a_number: "не число"
+      not_an_integer: "не є цілим числом"
+      greater_than: "має бути більше ніж %{count}"
+      greater_than_or_equal_to: "має бути більше ніж або дорівнювати %{count}"
+      equal_to: "має дорівнювати %{count}"
+      less_than: "має бути менше ніж %{count}"
+      less_than_or_equal_to: "має бути менше ніж або дорівнювати %{count}"
+      odd: "має бути непарним"
+      even: "має бути парним"
+      record_invalid: "Виникли помилки: %{errors}"
+    template: # Rails 3 DmitriiB
+      header:
+        one: "%{model} : збереження не вдалося через %{count} помилки"
+        few: "%{model}: збереження не вдалося через %{count} помилок"
+        many: "%{model}: збереження не вдалося через %{count} помилок"
+        other: "%{model}: збереження не вдалося через %{count} помилки"
+      body: "Проблеми виникли з наступними полями:"
+
+  activerecord:
+    errors:
+      messages:
+        inclusion: "має непередбачене значення"
+        exclusion: "має зарезервоване значення"
+        invalid: "має невірне значення"
+        confirmation: "не збігається з підтвердженням"
+        accepted: "потрібно підтвердити"
+        empty: "не може бути порожнім"
+        blank: "не може бути порожнім"
+        too_long:
+          one: "занадто великої довжини (не може бути більше ніж %{count} символ )"
+          few: "занадто великої довжини (не може бути більше ніж %{count} символів)"
+          many: "занадто великої довжини (не може бути більше ніж %{count} символів)"
+          other: "занадто великої довжини (не може бути більше ніж %{count} символів)"
+        too_short:
+          one: "недостатньої довжини (не може бути менше %{count} символів)"
+          few: "недостатньої довжини (не може бути менше %{count} символів)"
+          many: "недостатньої довжини (не може бути менше %{count} символів)"
+          other: "недостатньої довжини (не може бути менше %{count} символів)"
+        wrong_length:
+          one: "невірної довжини (може бути довжиною рівно %{count} символ )"
+          few: "невірної довжини (може бути довжиною рівно %{count} символів)"
+          many: "невірної довжини (може бути довжиною рівно %{count} символів)"
+          other: "невірної довжини (може бути довжиною рівно %{count} символів)"
+        taken: "вже існує"
+        not_a_number: "не є числом"
+        greater_than: "може мати значення більше %{count}"
+        greater_than_or_equal_to: "може мати значення більше або рівне %{count}"
+        equal_to: "може мати лише значення, рівне %{count}"
+        less_than: "може мати значення менше ніж %{count}"
+        less_than_or_equal_to: "може мати значення менше або рівне %{count}"
+        odd: "може мати лише парне значення"
+        even: "може мати лише непарне значення"
+        record_invalid: "виникли помилки: %{errors}"
+
+      full_messages:
+        format: "%{attribute} %{message}"
+
+  support:
+    select:
+      prompt: "Виберіть: "
+
+    array:
+      # Rails 2.2
+      sentence_connector: "і"
+      skip_last_comma: true
+
+      # Rails 2.3
+      words_connector: ", "
+      two_words_connector: " і "
+      last_word_connector: " і "
