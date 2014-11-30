@@ -1,0 +1,9 @@
+ru:
+  errors:
+    messages:
+      carrierwave_processing_error: 'помилка обробки'
+      carrierwave_integrity_error: 'недозволеного типу'
+      extension_white_list_error: "Заборонена завантаження файлів типу %{extension}, дозволені типи файлів: %{allowed_types}"
+      rmagick_processing_error: "Помилка роботи з rmagick, можливо це не зображення? Опис помилки: %{e}"
+      mime_types_processing_error: "Помилка обробки файлу з MIME::Types, можливо невірний тип вмісту (content-type)? Опис помилки: %{e}"
+      mini_magick_processing_error: "Помилка роботи з MiniMagick, можливо це не зображення? Опис помилки: %{e}"
